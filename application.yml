@@ -1,27 +1,4 @@
-spring:
-  application:
-    name: microservice-gateway-zuul
-
-server:
-  port: 7913
-  
-eureka:
-  client:
-    service-url:
-      defaultZone: http://user:password@localhost:8761/eureka
-  instance:
-    prefer-ip-address: true
-zuul:
-  ignoredServices: '*'
-  routes:
-    abc:
-      path: /user/**
-      service-id: microservice-provider-user
-  prefix: /simple
-  strip-prefix: false
-logging:
-  level:
-    com.netflix: debug
+prefile : default
   
       
       
