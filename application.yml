@@ -19,6 +19,9 @@ zuul:
       service-id: microservice-provider-user
   prefix: /simple
   strip-prefix: false
+logging:
+  level:
+    com.netflix: debug
   
       
       
